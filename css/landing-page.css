@@ -1,0 +1,200 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.5 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+ html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Lato',-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif; 
+  line-height: 1.6;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #015DB4 !important;
+  border-color: #015DB4 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro','Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+.steps__circle {
+  float: left;
+  font-family: 'Source Sans Pro','Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  border: 1px solid #9da3a6;
+  border-radius: 50%;
+  background-clip: padding-box;
+  margin-right: 20px;
+  width: 45px;
+  height: 45px;
+  line-height: 42px;
+  text-align: center;
+}
+ 
+
+.steps__image-wrapper {
+  display: block;
+}
+.steps__image-wrapper {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.steps__text {
+  display: table-cell;
+  vertical-align: middle;
+  height: 45px;
+  padding: 0;
+  text-align: left;
+}
+ 
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 2rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+.showcase .showcase-sinric {
+  min-height: 30rem;
+  background-repeat: no-repeat;
+}
+ 
+
+.showcase .showcase-vdo {
+    min-height: 40rem;
+    min-width: 30rem;
+    background-repeat: no-repeat;
+}
+
+/* imgphone {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+} */
+
+.imgA1 {
+  z-index: 1;
+}
+.imgB1 {
+  z-index: 3;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 2rem;
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.center-phone-img {
+    display: block;
+    margin: 0 auto;
+}
