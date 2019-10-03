@@ -22,7 +22,8 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
@@ -70,7 +71,7 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-xl-9 mx-auto">
+        <div class="col-xl-9 mx-auto slideInRight animated">
           <h1 id="title" class="mb-5">Home automation for everyone</h1>
           <h5 id="subtitle" class="mb-5">Simple way to control your IOT development boards like RaspberryPi, ESP8226,
             ESP32 or Arduino with Amazon Alexa or Google Home!</h5>
@@ -81,7 +82,7 @@
               <a id="signup" class="btn btn-primary btn-block" onclick="signup();return false;" href="#">Signup</a>
             </div>
             <div class="col-sm-6 my-sm-0 my-3">
-              <a id="getStartedNow" class="btn btn-primary btn-block"
+              <a id="getStartedNow" class="btn btn-primary btn-block heartBeat animated"
                 href="https://help.sinric.pro/pages/quickstart.html">Get started now</a>
             </div>
           </div>
@@ -263,7 +264,7 @@
             <div class="form-row">
               <div class="col-4"></div>
               <div class="col-4">
-                <a id="signupNow" class="btn btn-primary" href="http://portal.sinric.pro/register">Sign up!</a>
+                <a id="signupNow" class="btn btn-primary heartBeat animated" href="http://portal.sinric.pro/register">Sign up!</a>
               </div>
               <div class="col-4"></div>
             </div>
