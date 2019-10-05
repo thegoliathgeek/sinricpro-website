@@ -60,8 +60,11 @@
         <a id="en" href="#" class="dropdown-item" onclick="langDropDownClicked('en');return false;">English</a>
         <a id="es" href="#" class="dropdown-item" onclick="langDropDownClicked('es');return false;">Español</a>
         <a id="de" href="#" class="dropdown-item" onclick="langDropDownClicked('de');return false;">Deutsch</a>
+        <a id="hi" href="#" class="dropdown-item" onclick="langDropDownClicked('hi');return false;">हिन्दी</a>
+        <a id="th" href="#" class="dropdown-item" onclick="langDropDownClicked('th');return false;">ภาษาไทย</a>
         <a id="lk" href="#" class="dropdown-item" onclick="langDropDownClicked('lk');return false;">සිංහල</a>
         <a id="kan" href="#" class="dropdown-item" onclick="langDropDownClicked('kan');return false;">ಕನ್ನಡ</a>
+        <a id="kan" href="https://github.com/sinricpro/language-files" class="dropdown-item">Not here?</a>
       </ul>
     </div>
   </nav>
@@ -70,8 +73,8 @@
   <header class="masthead text-white text-center">
     <div class="overlay"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto slideInRight animated">
+      <div class="row  fadeIn animated">
+        <div class="col-xl-9 mx-auto">
           <h1 id="title" class="mb-5">Home automation for everyone</h1>
           <h5 id="subtitle" class="mb-5">Simple way to control your IOT development boards like RaspberryPi, ESP8226,
             ESP32 or Arduino with Amazon Alexa or Google Home!</h5>
@@ -79,10 +82,10 @@
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <div class="row">
             <div class="col-sm-6">
-              <a id="signup" class="btn btn-primary btn-block" onclick="signup();return false;" href="#">Signup</a>
+              <a id="signup" class="btn btn-primary btn-block " onclick="signup();return false;" href="#">Signup</a>
             </div>
             <div class="col-sm-6 my-sm-0 my-3">
-              <a id="getStartedNow" class="btn btn-primary btn-block heartBeat animated"
+              <a id="getStartedNow" class="btn btn-primary btn-block"
                 href="https://help.sinric.pro/pages/quickstart.html">Get started now</a>
             </div>
           </div>
@@ -200,37 +203,191 @@
 
           </div>
         </div>
-        <div class="row no-gutters">
-          <div class="col-lg-8 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
-          <div class="col-lg-4 my-auto">
-            <h2 id="goFartherWithAPIs"> Go farther with APIs</h2>
-            <ul>
-              <li style="line-height: 2;"><a href="https://apidocs.sinric.pro">
-                  <div id="APIDocumentation">API Documentation</div>
-                </a> </li>
-              <li style="line-height: 2;"><a href="https://help.sinric.pro">
-                  <div id="helpDocumentation">Help Documentation</div>
-                </a> </li>
-            </ul>
-          </div>
+        
+
+      </div>
+    </section>
+
+    <!-- Supported Devices -->
+    <section class="showcase mb-5">
+      <div class="container-fluid">
+        <div class="row justify-content-center" style="padding-top: 4rem;">
+          <h2 id="supportedDevices">Supported Devices</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>          
+        </div> 
+
+        <div class="row no-gutters mt-5">
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/smart_switch.html" class="d-block">
+                    <img src="img/switch.png" alt="sinric smart switch">
+                    <h6 id="smartSwitch" class="mt-4">Smart Switch</h6>
+                </a>
+            </div>
+
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/smart_light_bulb.html" class="d-block">
+                    <img src="img/lightbulb.png" alt="sinric smart light bulb">
+                    <h6 id="smartLightBulb" class="mt-4">Smart Light Bulb</h6>
+                </a>
+            </div>
+
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/thermostat.html" class="d-block">
+                    <img src="img/thermostat.png" alt="sinric smart thermostat">
+                    <h6 id="thermostat" class="mt-4">Thermostat</h6>
+                </a>
+            </div>
+ 
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/tv.html" class="d-block">
+                    <img src="img/tv.png" alt="plug">
+                    <h6 id="smartTV" class="mt-4">Smart TV</h6>
+                </a>
+            </div> 
+        </div> 
+
+        <div class="row no-gutters mt-5">
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/window_ac_unit.html" class="d-block">
+                    <img src="img/air_conditioner.png" alt="sinric smart air conditioner">
+                    <h6 id="windowAcUnit" class="mt-4">Window AC Unit</h6>
+                </a>
+            </div>
+
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/smart_switch_with_dimmer.html" class="d-block">
+                    <img src="img/dimmer.png" alt="sinric smart dimmer">
+                    <h6 id="smartSwitchWithDimmer" class="mt-4">Smart Switch with Dimmer</h6>
+                </a>
+            </div>
+
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/smart_lock.html" class="d-block">
+                    <img src="img/doorlock.png" alt="sinric smart lock">
+                    <h6 id="smartLock" class="mt-4">Smart Lock</h6>
+                </a>
+            </div>
+ 
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/smart_speaker.html" class="d-block">
+                    <img src="img/smart-speakers.png" alt="sinric smart speaker">
+                    <h6 id="smartSpeaker" class="mt-4">Smart Speaker</h6>
+                </a>
+            </div> 
+        </div> 
+
+        <div class="row no-gutters mt-5">
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/temperature_sensor.html" class="d-block">
+                    <img src="img/thermometer.png" alt="sinric smart temperature humidity sensor">
+                    <h6 id="temperatureHumiditySensor" class="mt-4">Temperature / Humidity Sensor</h6>
+                </a>
+            </div>
+
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/contact_sensor.html" class="d-block">
+                    <img src="img/contact_sensor.png" alt="sinric contact sensor">
+                    <h6 id="contactSensor" class="mt-4">Contact Sensor</h6>
+                </a>
+            </div>
+
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/doorbell.html" class="d-block">
+                    <img src="img/doorbell.png" alt="sinric doorbell">
+                    <h6 id="doorbell" class="mt-4">Doorbell</h6>
+                </a>
+            </div>
+ 
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/motion_sensor.html" class="d-block">
+                    <img src="img/motion_sensor.png" alt="sinric motion sensor">
+                    <h6 id="motionSensor" class="mt-4">Motion Sensor</h6>
+                </a>
+            </div> 
+        </div> 
+
+        <div class="row no-gutters mt-5">
+            <div class="col-3 text-center">
+                <a href="https://help.sinric.pro/pages/devices/fan.html" class="d-block">
+                    <img src="img/fan.png" alt="sinric smart fan">
+                    <h6 id="fan" class="mt-4">Fan</h6>
+                </a>
+            </div>        
         </div>
 
       </div>
     </section>
+
+     <!-- Supported Devices -->
+     <section class="showcase mb-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center" style="padding-top: 4rem;">
+                <h2 id="goFarther"> Go farther</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <hr>
+              </div>          
+            </div> 
+
+            <div class="row no-gutters">
+                <div class="col-lg-8 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+                <div class="col-lg-4 my-auto">
+                  
+                  <ul>
+                    <li style="line-height: 2;">
+                        <div id="SDKsAreAvailableFor">SDKs are available for </div>
+                        <ul>
+                          <li>
+                              <a href="https://github.com/sinricpro/esp8266-esp32-sdk"> ESP8266/ESP32</a> 
+                          </li>
+                          <li>
+                            <a href="https://github.com/sinricpro/python-sdk"> Python</a> 
+                          </li>
+                          <li>
+                              <a href="https://github.com/sinricpro/nodejs-sdk"> NodeJS</a> 
+                            </li>
+                        </ul>
+                    </li>
+      
+                    <li style="line-height: 2;"><a href="https://apidocs.sinric.pro">
+                        <div id="APIDocumentation">API Documentation</div>
+                      </a> 
+                    </li>
+                    <li style="line-height: 2;"><a href="https://help.sinric.pro">
+                        <div id="helpDocumentation">Help Documentation</div>
+                      </a> 
+                    </li>
+                  </ul>
+                </div>
+              </div> 
+
+        </div>
+
+        
+     </section>
+
+    
   </div>
+  </div>
+  
+  
 
   <section class="testimonials text-center bg-light">
     <div class="container">
       <h2 class="mb-5" id="team">Team</h2>
       <div class="row">
-
-
+ 
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/dhanush.jpg" alt="">
             <h5>Dhanush D.</h5>
             <p class="font-weight-light mb-0">Co-Founder</p>
-            <p class="font-weight-light mb-0">Python/NodeJS SDK</p>
+            <p class="font-weight-light mb-0">Python/NodeJS SDK/Machine learning</p>
           </div>
         </div>
         <div class="col-lg-4">
@@ -246,7 +403,7 @@
             <img class="img-fluid rounded-circle mb-3" src="img/aruna.jpg" alt="">
             <h5>Aruna T.</h5>
             <p class="font-weight-light mb-0">Founder</p>
-            <p class="font-weight-light mb-0">Eveything else</p>
+            <p class="font-weight-light mb-0">Backend/Frontend/APIs/Mobile</p>
           </div>
         </div>
       </div>
