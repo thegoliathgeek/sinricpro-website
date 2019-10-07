@@ -1,0 +1,23 @@
+{
+  "name": "sinricpro-website",
+  "version": "1.0.0",
+  "description": "This repository contains the Sinric Pro website http://sinric.pro code",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imdhanush/sinricpro-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imdhanush/sinricpro-website/issues"
+  },
+  "homepage": "https://github.com/imdhanush/sinricpro-website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
