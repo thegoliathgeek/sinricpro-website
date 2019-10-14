@@ -4,7 +4,7 @@ i18next
     .use(i18nextBrowserLanguageDetector)
     .init({
         fallbackLng: 'en',
-        debug: true,
+        debug: false,
         backend: {
             loadPath: 'i18n/{{ns}}.{{lng}}.json',
             crossDomain: true
@@ -35,16 +35,34 @@ function updateContent() {
     document.getElementById('YouCanControlYourDevice').innerHTML = i18next.t('YouCanControlYourDevice', { what: 'i18next' });
     document.getElementById('androidApp').innerHTML = i18next.t('androidApp', { what: 'i18next' });
     document.getElementById('control').innerHTML = i18next.t('control', { what: 'i18next' });
+
+    document.getElementById('supportedDevices').innerHTML = i18next.t('supportedDevices', { what: 'i18next' });
+    document.getElementById('smartSwitch').innerHTML = i18next.t('smartSwitch', { what: 'i18next' });
+    document.getElementById('smartLightBulb').innerHTML = i18next.t('smartLightBulb', { what: 'i18next' });
+    document.getElementById('thermostat').innerHTML = i18next.t('thermostat', { what: 'i18next' });
+    document.getElementById('smartTV').innerHTML = i18next.t('smartTV', { what: 'i18next' });
+    document.getElementById('windowAcUnit').innerHTML = i18next.t('windowAcUnit', { what: 'i18next' });
+    document.getElementById('smartSwitchWithDimmer').innerHTML = i18next.t('smartSwitchWithDimmer', { what: 'i18next' });
+    document.getElementById('smartLock').innerHTML = i18next.t('smartLock', { what: 'i18next' });
+    document.getElementById('smartSpeaker').innerHTML = i18next.t('smartSpeaker', { what: 'i18next' });
+    document.getElementById('temperatureHumiditySensor').innerHTML = i18next.t('temperatureHumiditySensor', { what: 'i18next' });
+    document.getElementById('contactSensor').innerHTML = i18next.t('contactSensor', { what: 'i18next' });
+    document.getElementById('doorbell').innerHTML = i18next.t('doorbell', { what: 'i18next' });
+    document.getElementById('motionSensor').innerHTML = i18next.t('motionSensor', { what: 'i18next' });
+    document.getElementById('fan').innerHTML = i18next.t('fan', { what: 'i18next' });
+     
     document.getElementById('alexaSmartHomeSkill').innerHTML = i18next.t('alexaSmartHomeSkill', { what: 'i18next' });
     document.getElementById('googleHome').innerHTML = i18next.t('googleHome', { what: 'i18next' });
     document.getElementById('IFTTT').innerHTML = i18next.t('IFTTT', { what: 'i18next' });
     document.getElementById('API').innerHTML = i18next.t('API', { what: 'i18next' });
-    document.getElementById('goFartherWithAPIs').innerHTML = i18next.t('goFartherWithAPIs', { what: 'i18next' });
+    document.getElementById('goFarther').innerHTML = i18next.t('goFarther', { what: 'i18next' });
+    document.getElementById('SDKsAreAvailableFor').innerHTML = i18next.t('SDKsAreAvailableFor', { what: 'i18next' });
     document.getElementById('APIDocumentation').innerHTML = i18next.t('APIDocumentation', { what: 'i18next' });
     document.getElementById('helpDocumentation').innerHTML = i18next.t('helpDocumentation', { what: 'i18next' });
     document.getElementById('team').innerHTML = i18next.t('team', { what: 'i18next' });
     document.getElementById('readyToGetStarted').innerHTML = i18next.t('readyToGetStarted', { what: 'i18next' });
     document.getElementById('signupNow').innerHTML = i18next.t('signup', { what: 'i18next' });    
+    
 }
 
 function changeLng(lng) {
@@ -54,15 +72,16 @@ function changeLng(lng) {
 }
 
 function login() {
-    let language = (i18next.language == 'lk' ? 'si' : i18next.language);
-    window.location = "http://localhost:4200/login?lang="+ language; // http://portal.sinric.pro/login
+    //let language = (i18next.language == 'lk' ? 'si' : i18next.language);
+    window.location = "https://portal.sinric.pro/login"; // 
 }
 
 function signup() {
     // Pass the selected language to the registration page
     //console.log("Selected language: ", i18next.language);
     let language = (i18next.language == 'lk' ? 'si' : i18next.language);
-    window.location = "http://portal.sinric.pro/register?lang="+ language; //
+    window.location = "https://portal.sinric.pro/register?lang="+ language;
+    //window.location = "http://localhost:4200/register?lang="+ language;
 }
 
 i18next.on('languageChanged', () => {
