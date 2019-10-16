@@ -11,7 +11,7 @@ This repository contains the Sinric Pro website http://sinric.pro code
 
 ## License
 
-The documents in this project are licensed under the CC-BY-SA 3.0 License, which
+The documents in this project are licensed under the CC-BY-SA 4.0 License, which
 encourages you to share these documents. See
 <https://creativecommons.org/licenses/by/4.0/> for more details.
 
