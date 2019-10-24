@@ -1,14 +1,28 @@
-<html lang="en">
+<html lang="{{htmlLang}}">
 <link type="text/css" id="dark-mode" rel="stylesheet" href="">
 <style type="text/css" id="dark-mode-custom-style"></style>
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Connect ESP, RaspberryPI or Arduino with Amazon Alexa or Google Home for FREE">
-  <meta name="author" content="Aruna Tennakoon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{htmlMetaDescription}}">
+  <meta name="author" content="Sinric Pro">
+  <meta name="keywords" content="Alexa,google home,eco dot,esp32,esp8266,esp-01,raspberrypi,pi,arduino,python,nodejs">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  <title>Sinric Pro</title>
+  <link rel="alternate" href="https://sinric.pro" hreflang= "x-default" />
+  <link rel="alternate" hreflang="en" href="https://sinric.pro/index.html" />
+  <link rel="alternate" hreflang="es" href="https://sinric.pro/es-index.html" />
+  <link rel="alternate" hreflang="it" href="https://sinric.pro/it-index.html" />
+  <link rel="alternate" hreflang="de" href="https://sinric.pro/de-index.html" />
+  <link rel="alternate" hreflang="hi" href="https://sinric.pro/hi-index.html" />
+  <link rel="alternate" hreflang="th" href="https://sinric.pro/th-index.html" />
+  <link rel="alternate" hreflang="si" href="https://sinric.pro/si-index.html" />
+  <link rel="alternate" hreflang="kan" href="https://sinric.pro/kan-index.html" />
+  
+  <!-- https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes -->
+ 
+  <title>{{htmlTitle}}</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D99CNW4N4D"></script>
@@ -16,7 +30,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-D99CNW4N4D');
   </script>
 
@@ -49,7 +62,7 @@
       </a>
 
       <div class="row">
-        <a class="btn btn-primary" href="#" id="login" onclick="login();return false;">Login</a>
+        <a class="btn btn-primary" href="#" id="login" onclick="login();return false;">{{login}}</a>
       </div>
     </div>
 
@@ -58,15 +71,15 @@
         aria-haspopup="true" aria-expanded="false"> Language
       </a>
       <ul class="dropdown-menu" aria-labelledby="langdropdown">
-        <a id="en" href="#" class="dropdown-item" onclick="langDropDownClicked('en');return false;">English</a>
-        <a id="es" href="#" class="dropdown-item" onclick="langDropDownClicked('es');return false;">Español</a>
-        <a id="it" href="#" class="dropdown-item" onclick="langDropDownClicked('it');return false;">Italiano</a>
-        <a id="de" href="#" class="dropdown-item" onclick="langDropDownClicked('de');return false;">Deutsch</a>
-        <a id="hi" href="#" class="dropdown-item" onclick="langDropDownClicked('hi');return false;">हिन्दी</a>
-        <a id="th" href="#" class="dropdown-item" onclick="langDropDownClicked('th');return false;">ภาษาไทย</a>
-        <a id="lk" href="#" class="dropdown-item" onclick="langDropDownClicked('lk');return false;">සිංහල</a>
-        <a id="kan" href="#" class="dropdown-item" onclick="langDropDownClicked('kan');return false;">ಕನ್ನಡ</a>
-        <a id="kan" href="https://github.com/sinricpro/language-files" class="dropdown-item">Not here?</a>
+        <a id="en" href="https://sinric.pro/index.html" class="dropdown-item">English</a>
+        <a id="es" href="https://sinric.pro/es-index.html" class="dropdown-item">Español</a>
+        <a id="it" href="https://sinric.pro/it-index.html" class="dropdown-item">Italiano</a>
+        <a id="de" href="https://sinric.pro/de-index.html" class="dropdown-item">Deutsch</a>
+        <a id="hi" href="https://sinric.pro/hi-index.html" class="dropdown-item">हिन्दी</a>
+        <a id="th" href="https://sinric.pro/th-index.html" class="dropdown-item">ภาษาไทย</a>
+        <a id="lk" href="https://sinric.pro/si-index.html" class="dropdown-item" >සිංහල</a>
+        <a id="kan" href="https://sinric.pro/kan-index.html" class="dropdown-item">ಕನ್ನಡ</a>
+        <a id="nothere" href="https://github.com/sinricpro/language-files" class="dropdown-item">Not here?</a>
       </ul>
     </div>
   </nav>
@@ -77,9 +90,8 @@
     <div class="container">
       <div class="row  fadeIn animated">
         <div class="col-xl-9 mx-auto">
-          <h1 id="title" class="mb-5">Home automation for everyone</h1>
-          <h5 id="subtitle" class="mb-5">Simple way to control your IOT development boards like RaspberryPi, ESP8226,
-            ESP32 or Arduino with Amazon Alexa or Google Home!</h5>
+          <h1 id="title" class="mb-5">{{title}}</h1>
+          <h5 id="subtitle" class="mb-5">{{subtitle}}</h5>
 
             <h5 id="subtitle" class="mb-5">Go alive on 2019-10-26!</h5>
             <h6 id="subtitle" class="mb-5">System is still under heavy development</h6>
@@ -87,11 +99,11 @@
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <div class="row">
             <div class="col-sm-6">
-              <a id="signup" class="btn btn-primary btn-block " onclick="signup();return false;" href="#">Signup</a>
+              <a id="signup" class="btn btn-primary btn-block " onclick="signup();return false;" href="#">{{signup}}</a>
             </div>
             <div class="col-sm-6 my-sm-0 my-3">
-              <a id="getStartedNow" class="btn btn-primary btn-block"
-                href="https://help.sinric.pro/pages/quickstart.html">Get started now</a>
+              <a id="getStartedNow" class="btn btn-primary btn-block" 
+                href="https://help.sinric.pro/pages/quickstart.html">{{getStartedNow}}</a>
             </div>
           </div>
         </div>
@@ -105,7 +117,7 @@
     <section class="features-icons text-center">
       <div class="container">
         <div class="row justify-content-center">
-          <h2 id="howSinricProWorks">How Sinric Pro works</h2>
+          <h2 id="howSinricProWorks">{{howSinricProWorks}}</h2>
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -118,18 +130,16 @@
             <div class="steps__image-wrapper">
               <img alt="" src="img/step1.png"></div><span class="steps__circle">1</span>
             <p>
-              <b class="steps__text" id="createYourSinricProAccount">Create Your Sinric Pro Account</b>
-              <div class="steps__text" id="signupForYourVeryOwn">Signing up for your very own Sinric Pro account. It is
-                easy and free.</div>
+              <b class="steps__text" id="createYourSinricProAccount">{{createYourSinricProAccount}}</b>
+              <div class="steps__text" id="signupForYourVeryOwn">{{signupForYourVeryOwn}}</div>
             </p>
           </div>
           <div class="col-md-4 col-sm-12 steps__step">
             <div class="steps__image-wrapper">
               <img alt="" src="img/step2.png"></div><span class="steps__circle">2</span>
             <p>
-              <b class="steps__text" id="addSmartHomeDevices">Add Smart Home Devices</b>
-              <div class="steps__text" id="downloadExampleCodeFrom">Download example code from Githb repo and change
-                WiFi, device id and API key </div>
+              <b class="steps__text" id="addSmartHomeDevices">{{addSmartHomeDevices}}</b>
+              <div class="steps__text" id="downloadExampleCodeFrom">{{downloadExampleCodeFrom}}</div>
             </p>
           </div>
           <div class="col-md-4 col-sm-12 steps__step">
@@ -137,8 +147,7 @@
               <img alt="" src="img/step3.png"></div><span class="steps__circle">3</span>
             <p>
               <b class="steps__text" id="control">Control</b>
-              <div class="steps__text" id="useTheSinricProApp">Use the Sinric Pro App, Alexa Skill, Google Action, IFTTT
-                or build your own using the APIs.</div>
+              <div class="steps__text" id="useTheSinricProApp">{{useTheSinricProApp}}</div>
             </p>
           </div>
         </div>
@@ -149,7 +158,7 @@
     <section class="showcase">
       <div class="container-fluid">
         <div class="row justify-content-center" style="padding-top: 4rem;">
-          <h2 id="whySinricPro">Why Sinric Pro ?</h2>
+          <h2 id="whySinricPro">{{whySinricPro}}</h2>
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -158,23 +167,23 @@
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6 showcase-text">
-            <h2 id="easyToUse">Easy to Use</h2>
+            <h2 id="easyToUse">{{easyToUse}}</h2>
             <p class="lead mb-0">
-              <div id="itTakesLessThan">It takes less than 5 mins to setup</div>
+              <div id="itTakesLessThan">{{itTakesLessThan}}</div>
             </p>
             <div class="p-4">
             </div>
             <p class="lead mb-0">
             </p>
             <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="step1CreateAnAccount">Step 1: Create an account and login</span> </h6>
+                id="step1CreateAnAccount">{{step1CreateAnAccount}}</span> </h6>
             <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="step2AddANewDevice">Step 2: Add a new device</span> </h6>
+                id="step2AddANewDevice">{{step2AddANewDevice}}</span> </h6>
             <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="Step3DownloadTheExample">Step 3: Download the example code from <a
+                id="Step3DownloadTheExample">{{Step3DownloadTheExample}} <a
                   href="https://github.com/sinric">Github</a></span></h6>
             <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="Step4ControlUsingApp">Step 4: Control using app, Alexa, Google Home, IFTTT or API</span></h6>
+                id="Step4ControlUsingApp">{{Step4ControlUsingApp}}</span></h6>
             <p></p>
           </div>
         </div>
@@ -186,22 +195,22 @@
             </div>
           </div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2 id="control">Control</h2>
+            <h2 id="control">{{control}}</h2>
             <p class="lead mb-0">
-              <div id="YouCanControlYourDevice">You can control your device using</div>
+              <div id="YouCanControlYourDevice">{{YouCanControlYourDevice}}</div>
             </p>
             <div class="p-4">
             </div>
             <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="androidApp">Android app</span> </h6>
+                id="androidApp">{{androidApp}}</span> </h6>
             <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="alexaSmartHomeSkill">Alexa Smart Home Skill (pending approval) </span></h6>
+                id="alexaSmartHomeSkill">{{alexaSmartHomeSkill}} </span></h6>
             <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="googleHome">Google Home (coming soon) </span></h6>
+                id="googleHome">{{googleHome}}</span></h6>
             <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="IFTTT">IFTTT (coming soon) </span></h6>
+                id="IFTTT">{{IFTTT}}</span></h6>
             <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="API"><a href="https://apidocs.sinric.pro">API</a> </span></h6>
+                id="API"><a href="https://apidocs.sinric.pro">{{API}}</a> </span></h6>
 
           </div>
         </div>
@@ -214,7 +223,7 @@
     <section class="showcase mb-5">
       <div class="container-fluid">
         <div class="row justify-content-center" style="padding-top: 4rem;">
-          <h2 id="supportedDevices">Supported Devices</h2>
+          <h2 id="supportedDevices">{{supportedDevices}}</h2>
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -226,28 +235,28 @@
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/smart_switch.html" class="d-block">
                     <img src="img/switch.png" alt="sinric smart switch">
-                    <h6 id="smartSwitch" class="mt-4">Smart Switch</h6>
+                    <h6 id="smartSwitch" class="mt-4">{{smartSwitch}}</h6>
                 </a>
             </div>
 
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/smart_light_bulb.html" class="d-block">
                     <img src="img/lightbulb.png" alt="sinric smart light bulb">
-                    <h6 id="smartLightBulb" class="mt-4">Smart Light Bulb</h6>
+                    <h6 id="smartLightBulb" class="mt-4">{{smartLightBulb}}</h6>
                 </a>
             </div>
 
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/thermostat.html" class="d-block">
                     <img src="img/thermostat.png" alt="sinric smart thermostat">
-                    <h6 id="thermostat" class="mt-4">Thermostat</h6>
+                    <h6 id="thermostat" class="mt-4">{{thermostat}}</h6>
                 </a>
             </div>
  
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/tv.html" class="d-block">
                     <img src="img/tv.png" alt="plug">
-                    <h6 id="smartTV" class="mt-4">Smart TV</h6>
+                    <h6 id="smartTV" class="mt-4">{{smartTV}}</h6>
                 </a>
             </div> 
         </div> 
@@ -256,28 +265,28 @@
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/window_ac_unit.html" class="d-block">
                     <img src="img/air_conditioner.png" alt="sinric smart air conditioner">
-                    <h6 id="windowAcUnit" class="mt-4">Window AC Unit</h6>
+                    <h6 id="windowAcUnit" class="mt-4">{{windowACUnit}}</h6>
                 </a>
             </div>
 
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/smart_switch_with_dimmer.html" class="d-block">
                     <img src="img/dimmer.png" alt="sinric smart dimmer">
-                    <h6 id="smartSwitchWithDimmer" class="mt-4">Smart Switch with Dimmer</h6>
+                    <h6 id="smartSwitchWithDimmer" class="mt-4">{{smartSwitchWithDimmer}}</h6>
                 </a>
             </div>
 
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/smart_lock.html" class="d-block">
                     <img src="img/doorlock.png" alt="sinric smart lock">
-                    <h6 id="smartLock" class="mt-4">Smart Lock</h6>
+                    <h6 id="smartLock" class="mt-4">{{smartLock}}</h6>
                 </a>
             </div>
  
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/smart_speaker.html" class="d-block">
                     <img src="img/smart-speakers.png" alt="sinric smart speaker">
-                    <h6 id="smartSpeaker" class="mt-4">Smart Speaker</h6>
+                    <h6 id="smartSpeaker" class="mt-4">{{smartSpeaker}}</h6>
                 </a>
             </div> 
         </div> 
@@ -286,28 +295,28 @@
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/temperature_sensor.html" class="d-block">
                     <img src="img/thermometer.png" alt="sinric smart temperature humidity sensor">
-                    <h6 id="temperatureHumiditySensor" class="mt-4">Temperature / Humidity Sensor</h6>
+                    <h6 id="temperatureHumiditySensor" class="mt-4">{{temperatureHumiditySensor}}</h6>
                 </a>
             </div>
 
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/contact_sensor.html" class="d-block">
                     <img src="img/contact_sensor.png" alt="sinric contact sensor">
-                    <h6 id="contactSensor" class="mt-4">Contact Sensor</h6>
+                    <h6 id="contactSensor" class="mt-4">{{contactSensor}}</h6>
                 </a>
             </div>
 
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/doorbell.html" class="d-block">
                     <img src="img/doorbell.png" alt="sinric doorbell">
-                    <h6 id="doorbell" class="mt-4">Doorbell</h6>
+                    <h6 id="doorbell" class="mt-4">{{doorbell}}</h6>
                 </a>
             </div>
  
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/motion_sensor.html" class="d-block">
                     <img src="img/motion_sensor.png" alt="sinric motion sensor">
-                    <h6 id="motionSensor" class="mt-4">Motion Sensor</h6>
+                    <h6 id="motionSensor" class="mt-4">{{motionSensor}}</h6>
                 </a>
             </div> 
         </div> 
@@ -316,7 +325,7 @@
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/fan.html" class="d-block">
                     <img src="img/fan.png" alt="sinric smart fan">
-                    <h6 id="fan" class="mt-4">Fan</h6>
+                    <h6 id="fan" class="mt-4">{{fan}}</h6>
                 </a>
             </div>        
         </div>
@@ -328,7 +337,7 @@
      <section class="showcase mb-5">
         <div class="container-fluid">
             <div class="row justify-content-center" style="padding-top: 4rem;">
-                <h2 id="goFarther"> Go farther</h2>
+                <h2 id="goFarther"> {{goFarther}}</h2>
             </div>
             <div class="row">
               <div class="col-md-12">
@@ -342,7 +351,7 @@
                   
                   <ul>
                     <li style="line-height: 2;">
-                        <div id="SDKsAreAvailableFor">SDKs are available for </div>
+                        <div id="SDKsAreAvailableFor">{{SDKsAreAvailableFor}} </div>
                         <ul>
                           <li>
                               <a href="https://github.com/sinricpro/esp8266-esp32-sdk"> ESP8266/ESP32</a> 
@@ -357,11 +366,11 @@
                     </li>
       
                     <li style="line-height: 2;"><a href="https://apidocs.sinric.pro">
-                        <div id="APIDocumentation">API Documentation</div>
+                        <div id="APIDocumentation">{{APIDocumentation}}</div>
                       </a> 
                     </li>
                     <li style="line-height: 2;"><a href="https://help.sinric.pro">
-                        <div id="helpDocumentation">Help Documentation</div>
+                        <div id="helpDocumentation">{{helpDocumentation}}</div>
                       </a> 
                     </li>
                   </ul>
@@ -369,25 +378,19 @@
               </div> 
 
         </div>
-
-        
      </section>
-
-    
   </div>
   </div>
-  
-  
-
+   
   <section class="testimonials text-center bg-light">
     <div class="container">
-      <h2 class="mb-5" id="team">Team</h2>
+      <h2 class="mb-5" id="team">{{team}}</h2>
       <div class="row">
  
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/dhanush.jpg" alt="">
-            <h5>Dhanush D.</h5>
+            <h5 class="image-link1">Dhanush D.</h5>
             <p class="font-weight-light mb-0">Co-Founder</p>
             <p class="font-weight-light mb-0">Python/NodeJS SDK/Machine learning</p>
           </div>
@@ -395,7 +398,7 @@
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/boris.jpg" alt="">
-            <h5>Boris J.</h5>
+            <h5 class="image-link2">Boris J.</h5>
             <p class="font-weight-light mb-0">Co-Founder</p>
             <p class="font-weight-light mb-0">C++ SDK</p>
           </div>
@@ -403,7 +406,7 @@
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/aruna.jpg" alt="">
-            <h5>Aruna T.</h5>
+            <h5 class="image-link3">Aruna T.</h5>
             <p class="font-weight-light mb-0">Founder</p>
             <p class="font-weight-light mb-0">Backend/Frontend/APIs/Mobile</p>
           </div>
@@ -416,14 +419,14 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4" id="readyToGetStarted">Ready to get started? Sign up now!</h2>
+          <h2 class="mb-4" id="readyToGetStarted">{{readyToGetStarted}}</h2>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
             <div class="form-row">
               <div class="col-4"></div>
               <div class="col-4">
-                <a id="signupNow" class="btn btn-primary heartBeat animated" href="http://portal.sinric.pro/register">Sign up!</a>
+                <a id="signupNow" class="btn btn-primary heartBeat animated" href="http://portal.sinric.pro/register">{{signup}}</a>
               </div>
               <div class="col-4"></div>
             </div>
@@ -483,18 +486,13 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- i18next -->
-  <script src="https://unpkg.com/i18next/i18next.js"></script>
-  <script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
-  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
   <script src="js/translate.js"></script>
 
-  <script type="text/javascript" id="cookiebanner"
+<script type="text/javascript" id="cookiebanner"
     src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js" data-height="20px"
     data-close-text="Close!" data-debug="true"
     data-message="This website stores cookies on your computer. These cookies are used to improve your website and provide more personalized services to you, both on this website and through other media. To find out more about the cookies we use, see our Privacy Policy.">
-    </script>
+</script>
 
 
 </body>

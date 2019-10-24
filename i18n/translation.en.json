@@ -1,4 +1,8 @@
 { 
+   "htmlLang" : "en",
+   "htmlMetaDescription" : "lets you connect and control IoT devices using Amazon Eco Dot, Google Home or Sinric Pro Android app for free",
+   "htmlTitle" : "Sinric Pro - Connect Amazon Alexa, Google Home with esp8266, esp32, raspberry pi",
+
    "title":"Home automation for everyone",
    "subtitle":"Simple way to control your IOT development boards like RaspberryPi, ESP8226, ESP32 or Arduino with Amazon Alexa or Google Home for FREE!",
    "login" : "Login",

@@ -1,4 +1,8 @@
 {
+    "htmlLang" : "de",
+    "htmlMetaDescription" : "Ermöglicht die Verbindung und Steuerung von IoT-Geräten mit Amazon Eco Dot oder Google Home",
+    "htmlTitle" : "Sinric Pro - Verbinden Sie Amazon Alexa, Google Home mit esp8266, esp32, raspberry pi",
+
     "title": "Hausautomation für alle",
     "subtitle": "Einfache Möglichkeit, Ihre IOT-Entwicklungsboards wie RaspberryPi, ESP8226, ESP32 oder Arduino mit Amazon Alexa oder Google Home KOSTENLOS zu steuern!",
     "login": "Einloggen",

@@ -4,7 +4,9 @@
   "description": "This repository contains the Sinric Pro website http://sinric.pro code",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "mustache i18n/translation.en.json index.mustache > public/-index.html & mustache i18n/translation.es.json index.mustache > public/-es-index.html & mustache i18n/translation.de.json index.mustache > public/-de-index.html & mustache i18n/translation.it.json index.mustache > public/-it-index.html & mustache i18n/translation.de.json index.mustache > public/-de-index.html & mustache i18n/translation.hi.json index.mustache > public/-hi-index.html & mustache i18n/translation.th.json index.mustache > public/-th-index.html & mustache i18n/translation.si.json index.mustache > public/-si-index.html & mustache i18n/translation.kan.json index.mustache > public/-kan-index.html",
+    "minify": "htmlminify -o public/index.html public/-index.html & htmlminify -o public/es-index.html  public/-es-index.html & htmlminify -o public/es-index.html  public/-es-index.html & htmlminify -o public/de-index.html  public/-de-index.html  & htmlminify -o public/it-index.html  public/-it-index.html & htmlminify -o public/hi-index.html  public/-hi-index.html & htmlminify -o public/th-index.html  public/-th-index.html & htmlminify -o public/si-index.html  public/-si-index.html & htmlminify -o public/kan-index.html  public/-kan-index.html"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,9 @@
   "homepage": "https://github.com/imdhanush/sinricpro-website#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "html-minify": "^0.3.2",
+    "mustache": "^3.1.0"
   }
 }

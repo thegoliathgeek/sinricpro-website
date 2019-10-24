@@ -198,3 +198,11 @@ footer.footer {
     display: block;
     margin: 0 auto;
 }
+
+.image-link1,.image-link2,.image-link3{
+  cursor: pointer;
+}
+
+.image-link1:hover,.image-link2:hover,.image-link3:hover{
+  color:#3399ff;
+}

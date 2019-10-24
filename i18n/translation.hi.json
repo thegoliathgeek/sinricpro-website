@@ -1,4 +1,7 @@
-{
+{   "htmlLang" : "hi",
+    "htmlMetaDescription" : "आपको अमेज़ॅन इको डॉट, Google होम या सिन्रिक प्रो एंड्रॉइड ऐप का उपयोग करके आईओटी उपकरणों को मुफ्त में कनेक्ट और नियंत्रित करने देता है",
+    "htmlTitle" : "Sinric Pro - Amazon Alexa, Google होम को esp8266, esp32, रास्पबेरी पाई से कनेक्ट करें",
+
     "title": "सभी के लिए होम ऑटोमेशन",
     "subtitle": "RaspberryPi, ESP8226, ESP32 या Arduino जैसे अपने IOT विकास बोर्डों को नियंत्रित करने का सरल तरीका मुफ्त में Amazon Alexa या Google होम के साथ!",
     "login": "लॉग इन करें",
