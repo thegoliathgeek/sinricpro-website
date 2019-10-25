@@ -1,6 +1,5 @@
+<!DOCTYPE html>
 <html lang="{{htmlLang}}">
-<link type="text/css" id="dark-mode" rel="stylesheet" href="">
-<style type="text/css" id="dark-mode-custom-style"></style>
 
 <head>
   <meta charset="utf-8">
@@ -8,8 +7,7 @@
   <meta name="description" content="{{htmlMetaDescription}}">
   <meta name="author" content="Sinric Pro">
   <meta name="keywords" content="Alexa,google home,eco dot,esp32,esp8266,esp-01,raspberrypi,pi,arduino,python,nodejs">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+  
   <link rel="alternate" href="https://sinric.pro" hreflang= "x-default" />
   <link rel="alternate" hreflang="en" href="https://sinric.pro/index.html" />
   <link rel="alternate" hreflang="es" href="https://sinric.pro/es-index.html" />
@@ -18,7 +16,7 @@
   <link rel="alternate" hreflang="hi" href="https://sinric.pro/hi-index.html" />
   <link rel="alternate" hreflang="th" href="https://sinric.pro/th-index.html" />
   <link rel="alternate" hreflang="si" href="https://sinric.pro/si-index.html" />
-  <link rel="alternate" hreflang="kan" href="https://sinric.pro/kan-index.html" />
+  <link rel="alternate" hreflang="kn" href="https://sinric.pro/kan-index.html" />
   
   <!-- https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes -->
  
@@ -34,14 +32,14 @@
   </script>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   
   <!-- Animate CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
 
@@ -71,15 +69,33 @@
         aria-haspopup="true" aria-expanded="false"> Language
       </a>
       <ul class="dropdown-menu" aria-labelledby="langdropdown">
-        <a id="en" href="https://sinric.pro/index.html" class="dropdown-item">English</a>
-        <a id="es" href="https://sinric.pro/es-index.html" class="dropdown-item">Español</a>
-        <a id="it" href="https://sinric.pro/it-index.html" class="dropdown-item">Italiano</a>
-        <a id="de" href="https://sinric.pro/de-index.html" class="dropdown-item">Deutsch</a>
-        <a id="hi" href="https://sinric.pro/hi-index.html" class="dropdown-item">हिन्दी</a>
-        <a id="th" href="https://sinric.pro/th-index.html" class="dropdown-item">ภาษาไทย</a>
-        <a id="lk" href="https://sinric.pro/si-index.html" class="dropdown-item" >සිංහල</a>
-        <a id="kan" href="https://sinric.pro/kan-index.html" class="dropdown-item">ಕನ್ನಡ</a>
-        <a id="nothere" href="https://github.com/sinricpro/language-files" class="dropdown-item">Not here?</a>
+        <li>
+          <a id="en" href="https://sinric.pro/index.html" class="dropdown-item">English</a>
+        </li>
+        <li>  
+          <a id="es" href="https://sinric.pro/es-index.html" class="dropdown-item">Español</a>
+        </li>
+        <li>
+          <a id="it" href="https://sinric.pro/it-index.html" class="dropdown-item">Italiano</a>
+        </li>
+        <li>
+          <a id="de" href="https://sinric.pro/de-index.html" class="dropdown-item">Deutsch</a>
+        </li>
+        <li>
+          <a id="hi" href="https://sinric.pro/hi-index.html" class="dropdown-item">हिन्दी</a>
+        </li>
+        <li>
+          <a id="th" href="https://sinric.pro/th-index.html" class="dropdown-item">ภาษาไทย</a>
+        </li>
+        <li>
+          <a id="lk" href="https://sinric.pro/si-index.html" class="dropdown-item" >සිංහල</a>
+        </li>
+        <li>
+          <a id="kan" href="https://sinric.pro/kan-index.html" class="dropdown-item">ಕನ್ನಡ</a>
+        </li>
+        <li>
+          <a id="nothere" href="https://github.com/sinricpro/language-files" class="dropdown-item">Not here?</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -92,9 +108,8 @@
         <div class="col-xl-9 mx-auto">
           <h1 id="title" class="mb-5">{{title}}</h1>
           <h5 id="subtitle" class="mb-5">{{subtitle}}</h5>
-
-            <h5 id="subtitle" class="mb-5">Go alive on 2019-10-26!</h5>
-            <h6 id="subtitle" class="mb-5">System is still under heavy development</h6>
+            <h5 class="mb-5">Go alive on 2019-11-01!</h5>
+            <h6 class="mb-5">System is still under heavy development</h6>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <div class="row">
@@ -191,26 +206,22 @@
         <div class="row no-gutters">
           <div class="col-lg-6 order-lg-2 ">
             <div class="text-white showcase-vdo float-right">
-              <img src="img/bg-showcase-1.gif" class="center-phone-img">
+              <video muted autoplay loop playsinline src="https://sinricprowebsite.b-cdn.net/bg-showcase-1.webm" alt = "Sinric Pro Android app"  class="center-phone-img"></video>
+              <!-- img/bg-showcase-1.gif -->
             </div>
           </div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2 id="control">{{control}}</h2>
+            <h2>{{control}}</h2>
             <p class="lead mb-0">
               <div id="YouCanControlYourDevice">{{YouCanControlYourDevice}}</div>
             </p>
             <div class="p-4">
             </div>
-            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="androidApp">{{androidApp}}</span> </h6>
-            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="alexaSmartHomeSkill">{{alexaSmartHomeSkill}} </span></h6>
-            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="googleHome">{{googleHome}}</span></h6>
-            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="IFTTT">{{IFTTT}}</span></h6>
-            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="API"><a href="https://apidocs.sinric.pro">{{API}}</a> </span></h6>
+            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{androidApp}}</span> </h6>
+            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{alexaSmartHomeSkill}} </span></h6>
+            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{googleHome}}</span></h6>
+            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{IFTTT}}</span></h6>
+            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span><a href="https://apidocs.sinric.pro">{{API}}</a> </span></h6>
 
           </div>
         </div>
@@ -265,7 +276,7 @@
             <div class="col-3 text-center">
                 <a href="https://help.sinric.pro/pages/devices/window_ac_unit.html" class="d-block">
                     <img src="img/air_conditioner.png" alt="sinric smart air conditioner">
-                    <h6 id="windowAcUnit" class="mt-4">{{windowACUnit}}</h6>
+                    <h6 id="windowAcUnit" class="mt-4">{{windowAcUnit}}</h6>
                 </a>
             </div>
 
@@ -443,19 +454,7 @@
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
           <ul class="list-inline mb-2">
             <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">⋅</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">⋅</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">⋅</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
+              <a href="https://sinric.pro/policy-en.html">Privacy Policy</a>
             </li>
           </ul>
           <p class="text-muted small mb-4 mb-lg-0">© Sinric 2019. All Rights Reserved.</p>
@@ -463,18 +462,13 @@
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">
             <li class="list-inline-item mr-3">
-              <a href="#">
+              <a href="https://www.facebook.com/sinrichome/">
                 <i class="fab fa-facebook fa-2x fa-fw"></i>
               </a>
             </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
             <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              <a href="https://github.com/sinricpro/">
+                <i class="fab fa-github fa-2x fa-fw"></i>
               </a>
             </li>
           </ul>
@@ -484,8 +478,8 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <script src="js/translate.js"></script>
 
 <script type="text/javascript" id="cookiebanner"
