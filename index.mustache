@@ -113,8 +113,6 @@
         <div class="col-xl-9 mx-auto">
           <h1 id="title" class="mb-5">{{title}}</h1>
           <h5 id="subtitle" class="mb-5">{{subtitle}}</h5>
-            <h5 class="mb-5">Go alive on 2019-11-01!</h5>
-            <h6 class="mb-5">System is still under heavy development</h6>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <div class="row">
@@ -174,67 +172,81 @@
     </section>
 
 
-    <!-- Why Sinic --> 
-    <section class="showcase">
-      <div class="container-fluid">
-        <div class="row justify-content-center" style="padding-top: 4rem;">
-          <h2 id="whySinricPro">{{whySinricPro}}</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <hr>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6 showcase-text">
-            <h2 id="easyToUse">{{easyToUse}}</h2>
-            <p class="lead mb-0">
-              <div id="itTakesLessThan">{{itTakesLessThan}}</div>
-            </p>
-            <div class="p-4">
-            </div>
-            <p class="lead mb-0">
-            </p>
-            <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="step1CreateAnAccount">{{step1CreateAnAccount}}</span> </h6>
-            <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="step2AddANewDevice">{{step2AddANewDevice}}</span> </h6>
-            <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="Step3DownloadTheExample">{{Step3DownloadTheExample}} <a
-                  href="https://github.com/sinricpro/esp8266-esp32-sdk">Github</a></span></h6>
-            <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
-                id="Step4ControlUsingApp">{{Step4ControlUsingApp}}</span></h6>
-            <p></p>
-          </div>
-        </div>
+   <!-- Why Sinic --> 
+            <section class="showcase">
+            <div class="container-fluid">
+                <div class="row justify-content-center" style="padding-top: 4rem">
+                    <h2 id="whySinricPro">{{whySinricPro}}</h2></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr/>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-6 showcase-text">
+                      <h2 id="easyToUse">{{easyToUse}}</h2>
+                      <div class="lead mb-0 small-subjects" id="itTakesLessThan">{{itTakesLessThan}}</div>
+                      <div class="p-4">
+                      </div>
+                      <p class="lead mb-0">
+                      </p>
+                      <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
+                          id="step1CreateAnAccount">{{step1CreateAnAccount}}</span> </h6>
+                      <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
+                          id="step2AddANewDevice">{{step2AddANewDevice}}</span> </h6>
+                      <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
+                          id="Step3DownloadTheExample">{{Step3DownloadTheExample}} <a
+                            href="https://github.com/sinric">Github</a></span></h6>
+                      <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
+                          id="Step4ControlUsingApp">{{Step4ControlUsingApp}}</span></h6>
+                      <p></p>
+                    </div>
+               </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex align-items-center" >
+                            <a href="https://play.google.com/store/apps/details?id=pro.sinric">
+                                <img alt="download sinric pro from google play" src="img/sinricpro_amazon_alexa_icon.png" />
+                            </a> 
+                            <div class="ml-2">
+                                <span>Amazon Alexa Skill: <h6 class="alexa-skill-avail-languages" >
+                                    <a href="https://www.amazon.com/dp/B07ZT5VDT8">English (US)</a>, 
+                                    <a href="https://www.amazon.in/dp/B07ZT5VDT8">English (IN)</a>,
+                                    <a href="https://www.amazon.com.au/dp/B07ZT5VDT8">English (AU)</a>,
+                                    <a href="https://www.amazon.de/dp/B07ZT5VDT8">German (DE)</a>,
+                                    <a href="https://www.amazon.ca/dp/B07ZT5VDT8">English (CA)</a>,
+                                    <a href="https://www.amazon.co.uk/dp/B07ZT5VDT8">English (UK)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row no-gutters mt-2">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="text-white showcase-vdo float-right">
+                            <video muted="" autoplay="" loop="" playsinline="" src="https://sinricprowebsite.b-cdn.net/bg-showcase-1.webm" class="center-phone-img"></video>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Control</h2>
+                        <div class="lead mb-0 small-subjects" id="YouCanControlYourDevice">{{YouCanControlYourDevice}}</div>
+                        <div class="p-4"></div>
+                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{androidApp}}</span> </h6>
+                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{alexaSmartHomeSkill}} </span></h6>
+                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{googleHome}}</span></h6>
+                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{IFTTT}}</span></h6>
+                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span><a href="https://apidocs.sinric.pro">{{API}}</a> </span></h6>
+                        <br/>
 
-        <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 ">
-            <div class="text-white showcase-vdo float-right">
-              <video muted autoplay loop playsinline src="https://sinricprowebsite.b-cdn.net/bg-showcase-1.webm" alt = "Sinric Pro Android app"  class="center-phone-img"></video>
-              <!-- img/bg-showcase-1.gif -->
+                            <div class="mt-2" >
+                                <a href="https://play.google.com/store/apps/details?id=pro.sinric">
+                                    <img class="mt-2" alt="download sinric pro from google play" src="img/google_play_icon.png" />
+                                </a>
+                            </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>{{control}}</h2>
-            <p class="lead mb-0">
-              <div id="YouCanControlYourDevice">{{YouCanControlYourDevice}}</div>
-            </p>
-            <div class="p-4">
-            </div>
-              <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{androidApp}}</span> </h6>
-              <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{alexaSmartHomeSkill}} </span></h6>
-              <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{googleHome}}</span></h6>
-              <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{IFTTT}}</span></h6>
-              <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span><a href="https://apidocs.sinric.pro">{{API}}</a> </span></h6>
-              <br>
-              <a  href="https://play.google.com/store/apps/details?id=pro.sinric"><img alt="download sinric pro from google play" src="img/google_play_icon.png"></a>
-          </div>
-        </div>
-        
-
-      </div>
-    </section>
+        </section>
 
     <!-- Supported Devices -->
     <section class="showcase mb-5">

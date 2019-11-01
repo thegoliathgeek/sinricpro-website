@@ -207,3 +207,16 @@ footer.footer {
 .image-link1:hover,.image-link2:hover,.image-link3:hover{
   color:#3399ff;
 }
+
+.alexa-skill-avail-languages {
+  font-family: 'Source Sans Pro','Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.small-subjects {
+  font-family: 'Source Sans Pro','Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 400;
+}
