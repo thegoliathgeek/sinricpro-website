@@ -33,6 +33,13 @@
     gtag('config', 'G-D99CNW4N4D');
   </script>
 
+  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+  <script src="js/translate.js"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <!-- Bootstrap core CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   
@@ -60,8 +67,8 @@
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" width="32" height="32" class="d-inline-block align-top mr-2" alt="logo" /> Sinric Pro
       </a>
-
-      <div class="row">
+ 
+      <div class="row  pull-right">
         <a class="btn btn-primary" href="#" id="login" onclick="login();return false;">{{login}}</a>
       </div>
     </div>
@@ -215,7 +222,8 @@
                                     <a href="https://www.amazon.com.au/dp/B07ZT5VDT8">English (AU)</a>,
                                     <a href="https://www.amazon.de/dp/B07ZT5VDT8">German (DE)</a>,
                                     <a href="https://www.amazon.ca/dp/B07ZT5VDT8">English (CA)</a>,
-                                    <a href="https://www.amazon.co.uk/dp/B07ZT5VDT8">English (UK)</a>
+                                    <a href="https://www.amazon.co.uk/dp/B07ZT5VDT8">English (UK),</a>
+                                    <a href="https://www.amazon.es/dp/B07ZT5VDT8">Español (ES)</a>                                    
                             </div>
                         </div>
                     </div>
@@ -410,6 +418,56 @@
      </section>
   </div>
   </div>
+
+  <section id="contact" class="showcase mb-5">
+			<div class="container">
+       
+            
+				<div class="row wow animated fadeInDown">
+					<div class="col-md-12 text-center hero-title">
+						<i class="fa fa-envelope"></i>
+            <h2 class="page-title">Contact</h2>
+						<div class="col-md-12">
+                <hr>
+              </div>
+            
+					</div><!--hero title end-->				
+				</div>
+				
+				<div class="row mt-2">
+             
+            <div class="col-12">					
+               <form>
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input class="form-control" type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input class="form-control" type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea class="form-control" id="message" name="message" required></textarea>
+                    </div>
+
+                    <div id='recaptcha' class="g-recaptcha"
+                        data-sitekey="6LdLvsAUAAAAAK2uENeseh3G13TkosEdjmUSKHJz"
+                        data-callback="onSubmit"
+                        data-size="invisible"></div>
+
+                    <div class="form-group">
+                      <button id='submit' class="btn btn-primary" >Send Message</button>
+                    </div>
+               
+            </form>
+            <script>onload();</script>
+            </div><!--form col-->      
+            
+			  </div>
+		</section>
    
   <section class="testimonials text-center bg-light">
     <div class="container">
@@ -443,6 +501,7 @@
       </div>
     </div>
   </section>
+
   <section class="call-to-action text-white text-center">
     <div class="overlay"></div>
     <div class="container">
@@ -498,13 +557,32 @@
   <!-- Bootstrap core JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <script src="js/translate.js"></script>
+  
+
+ 
+
 
 <script type="text/javascript" id="cookiebanner"
     src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js" data-height="20px"
     data-close-text="Close!" data-debug="true"
     data-message="This website stores cookies on your computer. These cookies are used to improve your website and provide more personalized services to you, both on this website and through other media. To find out more about the cookies we use, see our Privacy Policy.">
 </script>
+
+ 
+
+<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"url": "http://www.sinric.pro",
+			"name": "Sinric",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"email": "support@sinric.com",
+				"contactType": "Customer service"
+			}
+		}
+		</script>
 
 
 </body>
