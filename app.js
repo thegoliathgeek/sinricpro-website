@@ -16,4 +16,6 @@ app.get('/', function(req, res) {
     res.render('index.mustache', data);
 });
   
-app.listen(3000);
+app.listen(3000,()=>{
+    console.log('Dev server listening at http://localhost:3000');
+});

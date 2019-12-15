@@ -45,6 +45,7 @@
   
   <!-- Animate CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
@@ -182,8 +183,9 @@
    <!-- Why Sinic --> 
             <section class="showcase">
             <div class="container-fluid">
-                <div class="row justify-content-center" style="padding-top: 4rem">
-                    <h2 id="whySinricPro">{{whySinricPro}}</h2></div>
+                <div class="row justify-content-center" style="padding-top: 4rem" data-aos="fade-in">
+                    <h2 id="whySinricPro">{{whySinricPro}}</h2>
+                    </div>
                 <div class="row">
                     <div class="col-md-12">
                         <hr/>
@@ -191,27 +193,27 @@
                 </div>
                 <div class="row no-gutters">
                     <div class="col-lg-6 showcase-text">
-                      <h2 id="easyToUse">{{easyToUse}}</h2>
-                      <div class="lead mb-0 small-subjects" id="itTakesLessThan">{{itTakesLessThan}}</div>
+                      <h2 data-aos="fade-up" id="easyToUse">{{easyToUse}}</h2>
+                      <div data-aos="fade-up" class="lead mb-0 small-subjects" id="itTakesLessThan">{{itTakesLessThan}}</div>
                       <div class="p-4">
                       </div>
                       <p class="lead mb-0">
                       </p>
-                      <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
+                      <h6 data-aos="fade-up" style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf" ></i> &nbsp; <span
                           id="step1CreateAnAccount">{{step1CreateAnAccount}}</span> </h6>
-                      <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
+                      <h6 data-aos="fade-up" style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
                           id="step2AddANewDevice">{{step2AddANewDevice}}</span> </h6>
-                      <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
+                      <h6 data-aos="fade-up" style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
                           id="Step3DownloadTheExample">{{Step3DownloadTheExample}} <a
                             href="https://github.com/sinricpro">Github</a></span></h6>
-                      <h6 style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
+                      <h6 data-aos="fade-up" style="line-height: 2;"> <i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span
                           id="Step4ControlUsingApp">{{Step4ControlUsingApp}}</span></h6>
                       <p></p>
                     </div>
                </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="d-flex align-items-center" >
+                        <div class="d-flex align-items-center" data-aos="fade-right">
                             <a href="https://play.google.com/store/apps/details?id=pro.sinric">
                                 <img alt="download sinric pro from google play" src="img/sinricpro_amazon_alexa_icon.png" />
                             </a> 
@@ -233,22 +235,22 @@
                 
                 <div class="row no-gutters mt-3">
                     <div class="col-lg-6 order-lg-2 mx-auto">
-                        <div class="text-white showcase-vdo">
+                        <div class="text-white showcase-vdo" data-aos="fade-left">
                             <video muted="" autoplay="" loop="" playsinline="" src="https://sinricprowebsite.b-cdn.net/bg-showcase-1.webm" class="center-phone-img"></video>
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Control</h2>
-                        <div class="lead mb-0 small-subjects" id="YouCanControlYourDevice">{{YouCanControlYourDevice}}</div>
+                        <h2 data-aos="fade-right">Control</h2>
+                        <div data-aos="fade-right" class="lead mb-0 small-subjects" id="YouCanControlYourDevice">{{YouCanControlYourDevice}}</div>
                         <div class="p-4"></div>
-                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{androidApp}}</span> </h6>
-                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{alexaSmartHomeSkill}} </span></h6>
-                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{googleHome}}</span></h6>
-                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{IFTTT}}</span></h6>
-                        <h6 style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span><a href="https://apidocs.sinric.pro">{{API}}</a> </span></h6>
+                        <h6  data-aos="fade-up" style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{androidApp}}</span> </h6>
+                        <h6 data-aos="fade-up" style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{alexaSmartHomeSkill}} </span></h6>
+                        <h6 data-aos="fade-up" style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{googleHome}}</span></h6>
+                        <h6 data-aos="fade-up" style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span>{{IFTTT}}</span></h6>
+                        <h6 data-aos="fade-up" style="line-height: 2;"><i class="fa fa-check-circle" style="color:#467fcf"></i> &nbsp; <span><a href="https://apidocs.sinric.pro">{{API}}</a> </span></h6>
                         <br/>
 
-                            <div class="mt-2" >
+                            <div data-aos="zoom-out-down" class="mt-2" >
                                 <a href="https://play.google.com/store/apps/details?id=pro.sinric">
                                     <img class="mt-2" alt="download sinric pro from google play" src="img/google_play_icon.png" />
                                 </a>
@@ -261,7 +263,7 @@
     <!-- Supported Devices -->
     <section class="showcase mb-5">
       <div class="container-fluid">
-        <div class="row justify-content-center" style="padding-top: 4rem;">
+        <div class="row justify-content-center" style="padding-top: 4rem;"data-aos="fade-up" >
           <h2 id="supportedDevices">{{supportedDevices}}</h2>
         </div>
         <div class="row">
@@ -271,28 +273,28 @@
         </div> 
 
         <div class="row no-gutters mt-5">
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/smart_switch.html" class="d-block">
                     <img src="img/switch.png" alt="sinric smart switch">
                     <h6 id="smartSwitch" class="mt-4">{{smartSwitch}}</h6>
                 </a>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/smart_light_bulb.html" class="d-block">
                     <img src="img/lightbulb.png" alt="sinric smart light bulb">
                     <h6 id="smartLightBulb" class="mt-4">{{smartLightBulb}}</h6>
                 </a>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/thermostat.html" class="d-block">
                     <img src="img/thermostat.png" alt="sinric smart thermostat">
                     <h6 id="thermostat" class="mt-4">{{thermostat}}</h6>
                 </a>
             </div>
  
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/tv.html" class="d-block">
                     <img src="img/tv.png" alt="plug">
                     <h6 id="smartTV" class="mt-4">{{smartTV}}</h6>
@@ -301,28 +303,28 @@
         </div> 
 
         <div class="row no-gutters mt-5">
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/window_ac_unit.html" class="d-block">
                     <img src="img/air_conditioner.png" alt="sinric smart air conditioner">
                     <h6 id="windowAcUnit" class="mt-4">{{windowAcUnit}}</h6>
                 </a>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/smart_switch_with_dimmer.html" class="d-block">
                     <img src="img/dimmer.png" alt="sinric smart dimmer">
                     <h6 id="smartSwitchWithDimmer" class="mt-4">{{smartSwitchWithDimmer}}</h6>
                 </a>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/smart_lock.html" class="d-block">
                     <img src="img/doorlock.png" alt="sinric smart lock">
                     <h6 id="smartLock" class="mt-4">{{smartLock}}</h6>
                 </a>
             </div>
  
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/smart_speaker.html" class="d-block">
                     <img src="img/smart-speakers.png" alt="sinric smart speaker">
                     <h6 id="smartSpeaker" class="mt-4">{{smartSpeaker}}</h6>
@@ -331,28 +333,28 @@
         </div> 
 
         <div class="row no-gutters mt-5">
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/temperature_sensor.html" class="d-block">
                     <img src="img/thermometer.png" alt="sinric smart temperature humidity sensor">
                     <h6 id="temperatureHumiditySensor" class="mt-4">{{temperatureHumiditySensor}}</h6>
                 </a>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/contact_sensor.html" class="d-block">
                     <img src="img/contact_sensor.png" alt="sinric contact sensor">
                     <h6 id="contactSensor" class="mt-4">{{contactSensor}}</h6>
                 </a>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/doorbell.html" class="d-block">
                     <img src="img/doorbell.png" alt="sinric doorbell">
                     <h6 id="doorbell" class="mt-4">{{doorbell}}</h6>
                 </a>
             </div>
  
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/motion_sensor.html" class="d-block">
                     <img src="img/motion_sensor.png" alt="sinric motion sensor">
                     <h6 id="motionSensor" class="mt-4">{{motionSensor}}</h6>
@@ -361,7 +363,7 @@
         </div> 
 
         <div class="row no-gutters mt-5">
-            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center" data-aos="zoom-in">
                 <a href="https://help.sinric.pro/pages/devices/fan.html" class="d-block">
                     <img src="img/fan.png" alt="sinric smart fan">
                     <h6 id="fan" class="mt-4">{{fan}}</h6>
@@ -375,7 +377,7 @@
      <!-- Supported Devices -->
      <section class="showcase mb-5">
         <div class="container-fluid">
-            <div class="row justify-content-center" style="padding-top: 4rem;">
+            <div class="row justify-content-center" style="padding-top: 4rem;" data-aos="fade-up">
                 <h2 id="goFarther"> {{goFarther}}</h2>
             </div>
             <div class="row">
@@ -385,8 +387,8 @@
             </div> 
 
             <div class="row no-gutters">
-                <div class="col-lg-8 text-white showcase-img" style="background-image: url('img/bg-showcase-2.png');"></div>
-                <div class="col-lg-4 my-auto">
+                <div class="col-lg-8 text-white showcase-img" style="background-image: url('img/bg-showcase-2.png');" data-aos="fade-right"></div>
+                <div class="col-lg-4 my-auto" data-aos="fade-left">
                   
                   <ul>
                     <li style="line-height: 2;">
@@ -478,15 +480,15 @@
  
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/dhanush.png" alt="">
-            <h5 class="image-link1">Dhanush D.</h5>
+            <img class="img-fluid rounded-circle mb-3" src="img/dhanush.png" alt="" data-aos="zoom-in">
+            <h5 class="image-link1">Dhanush L.</h5>
             <p class="font-weight-light mb-0">Co-Founder</p>
             <p class="font-weight-light mb-0">Python/NodeJS SDK/Machine learning</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/boris.png" alt="">
+            <img class="img-fluid rounded-circle mb-3" src="img/boris.png" alt="" data-aos="zoom-in">
             <h5 class="image-link2">Boris J.</h5>
             <p class="font-weight-light mb-0">Co-Founder</p>
             <p class="font-weight-light mb-0">C++ SDK</p>
@@ -494,7 +496,7 @@
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/aruna.png" alt="">
+            <img class="img-fluid rounded-circle mb-3" src="img/aruna.png" alt="" data-aos="zoom-in">
             <h5 class="image-link3">Aruna T.</h5>
             <p class="font-weight-light mb-0">Founder</p>
             <p class="font-weight-light mb-0">Backend/Frontend/APIs/Mobile</p>
@@ -580,13 +582,14 @@
 			"name": "Sinric",
 			"contactPoint": {
 				"@type": "ContactPoint",
-				"email": "support@sinric.com",
+				"email": "supportsinric.com",
 				"contactType": "Customer service"
 			}
 		}
 		</script>
 
-
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script> AOS.init({duration: 1800,}); </script>
 </body>
 
 </html>
